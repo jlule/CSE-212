@@ -4,12 +4,15 @@
 ## And I will cover Stack Operations that incude Push, Pop and Peek
 ## What is a stack?
 A stack is very similar to the idea of what a physical stack would look like. The  stack data structure
-allows us to place a variabel or object on it. A very simple example of how the idea of stacks can be explained is to think
+allows us to place a variabel or object on it. A very s imple example of how the idea of stacks can be explained is to think
 of four books. Book A, Book B Book C and Book D and they are spread accross a table.
 Lets say you organize these books with A being the first one then you pile up B,C and D on top of each other.
 We now have a bice stack of Books!
 If we want to read book A we need to take down books starting with D then C and then B to get  to A
 That is the idea behind a data structure stacks.
+
+(Big O for  each operation stacks
+example and a student problem)
 
 # STACK OPERATIONS
 Wwe have the Push Pop and Peek.
@@ -28,6 +31,9 @@ when we perfrom the pop operation.
 The Peek  opertion retruns the top most element in stack. Lets say we pop the first two books in our stack
 the peek function will retyrn the top most book in our stack. So if remove Book D and Book C, what will
 the peek function return? Book B.
+## Application of Stacks
+There are some popular ways that stacks have been used to make our experience while using softwares easier. Think of Google Chrome. It is a browsing application. Lets say you are browsing the internet and want to opne up an article and on that new article you opne up another article. But now you wanna go back to the previous article. How do you think these articles are saved? If you guessed using stacks then you are hella smart.
 
-
+## Live Example
+Now enough with the talking 
 
