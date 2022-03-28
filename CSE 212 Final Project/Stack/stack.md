@@ -35,5 +35,9 @@ the peek function return? Book B.
 There are some popular ways that stacks have been used to make our experience while using softwares easier. Think of Google Chrome. It is a browsing application. Lets say you are browsing the internet and want to opne up an article and on that new article you opne up another article. But now you wanna go back to the previous article. How do you think these articles are saved? If you guessed using stacks then you are hella smart.
 
 ## Live Example
-Now enough with the talking 
+Now enough with the talking lets look at a coding example. 
+We are going to look at some code and see the basics of  how stacks works!
+
+
+
 
