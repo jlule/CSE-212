@@ -7,7 +7,7 @@ A binary Tree is a data strcuture in which each node can have a maximnum of 2 ch
 
 ## Diagram of a Structure of a node in a binary tree
 
-
+# NB. Add Image Here for visualization
 
 
 This is the code that can be used to define a node of the daigram above.
@@ -23,6 +23,7 @@ root = Node(9)
 root.PrintTree()
 
 Can you guess the output of the above code. If you guessed 10 then you got it right.
+
 ## Next we are going to cover inserting into a tree.
 When inserting into a tree we use the same node cloass created above and add a insert class to it.The insert class compares the value of the node to the parent node and decides to add it as a left node or a right node. Finally the PrintTree class is used to print the tree.
 
@@ -67,19 +68,19 @@ When the above code runs it produces the followinf results.
 
 3 6 12 14
 
-Traversing a Tree
+ ## Traversing a Tree
 The tree can be traversed by deciding on a sequence to visit each node. As we can clearly see we can start at a node then visit the left sub-tree first and right sub-tree next. Or we can also visit the right sub-tree first and left sub-tree next. Accordingly there are different names for these tree traversal methods.
 
-Tree Traversal Algorithms
-Traversal is a process to visit all the nodes of a tree and may print their values too. Because, all nodes are connected via edges (links) we always start from the root (head) node. That is, we cannot randomly access a node in a tree. There are three ways which we use to traverse a tree.
+## Tree Traversal Algorithms
+When Traversing through a tree we visit all the nodes of a tree and we may print their values. Now it is important to note that all nodes are connected bia links and we alwasy start from the root (head) node. So if we start from the root node we cannot access randomly all the nodes in a tree.There are tghree main ways we can traverse a tree.
 
-In-order Traversal
+## In-order Traversal
 
-Pre-order Traversal
+## Pre-order Traversal
 
-Post-order Traversal
+## Post-order Traversal
 
-In-order Traversal
+## In-order Traversal
 In this traversal method, the left subtree is visited first, then the root and later the right sub-tree. We should always remember that every node may represent a subtree itself.
 
 In the below python program, we use the Node class to create place holders for the root node as well as the left and right nodes. Then, we create an insert function to add data to the tree. Finally, the In-order traversal logic is implemented by creating an empty list and adding the left node first followed by the root or parent node.
