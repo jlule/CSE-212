@@ -11,8 +11,11 @@ We now have a bice stack of Books!
 If we want to read book A we need to take down books starting with D then C and then B to get  to A
 That is the idea behind a data structure stacks.
 
-(Big O for  each operation stacks
-example and a student problem)
+## Diagram of Stack
+
+
+## Things to note Big O for  each operation stacks
+
 
 # STACK OPERATIONS
 Wwe have the Push Pop and Peek.
@@ -36,7 +39,48 @@ There are some popular ways that stacks have been used to make our experience wh
 
 ## Live Example
 Now enough with the talking lets look at a coding example. 
-We are going to look at some code and see the basics of  how stacks works!
+We are going to look at some code and see the basics of  how stacks works
+
+stack = []
+ 
+# append() function to push
+# element in the stack
+stack.append('a')
+stack.append('b')
+stack.append('c')
+ 
+print('Initial stack')
+print(stack)
+ 
+# pop() function to pop
+# element from stack in
+# LIFO order
+print('\nElements popped from stack:')
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
+ 
+print('\nStack after elements are popped:')
+print(stack)
+ 
+# uncommenting print(stack.pop())
+# will cause an IndexError
+# as the stack is now empty
+
+Here is the outpit for this code
+
+Initial stack
+['a', 'b', 'c']
+
+Elements popped from stack:
+c
+b
+a
+
+Stack after elements are popped:
+[]
+
+## Sample Problem
 
 
 
