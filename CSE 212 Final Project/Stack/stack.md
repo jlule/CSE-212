@@ -43,8 +43,8 @@ We are going to look at some code and see the basics of  how stacks works
 
 stack = []
  
-# append() function to push
-# element in the stack
+#append() function to push
+#element in the stack
 stack.append('a')
 stack.append('b')
 stack.append('c')
@@ -52,9 +52,9 @@ stack.append('c')
 print('Initial stack')
 print(stack)
  
-# pop() function to pop
-# element from stack in
-# LIFO order
+#pop() function to pop
+#element from stack in
+#LIFO order
 print('\nElements popped from stack:')
 print(stack.pop())
 print(stack.pop())
@@ -63,9 +63,9 @@ print(stack.pop())
 print('\nStack after elements are popped:')
 print(stack)
  
-# uncommenting print(stack.pop())
-# will cause an IndexError
-# as the stack is now empty
+#uncommenting print(stack.pop())
+#will cause an IndexError
+#as the stack is now empty
 
 Here is the outpit for this code
 
