@@ -164,6 +164,7 @@ class Node:
                self.right.insert(data)
          else:
             self.data = data
+            
 # Print the Tree
    def PrintTree(self):
       if self.left:
