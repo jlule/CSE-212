@@ -27,7 +27,7 @@ For searching element 1, we have to traverse all elements (in order 3, 2, 1). Th
 For inserting element 0, it must be inserted as left child of 1. Therefore, we need to traverse all elements (in order 3, 2, 1) to insert 0 which has worst case complexity of O(n). In general, time complexity is O(h).
 ## Deletion:
  For deletion of element 1, we have to traverse all elements to find 1 (in order 3, 2, 1). Therefore, deletion in binary tree has worst case complexity of O(n). In general, time complexity is O(h).
-
+ ## Defining a node
 This is the code that can be used to define a node 
 
 ``` python
