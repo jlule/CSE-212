@@ -11,7 +11,7 @@ A binary Tree is a data strcuture in which each node can have a maximnum of 2 ch
 
 # O notation for Trees
 
-## Binary Tree
+## Binary Tree O nta
 ## Searching:
  For searching element 2, we have to traverse all elements (assuming we do breadth first traversal). Therefore, searching in binary tree has worst case complexity of O(n).
 ## Insertion: 
@@ -294,31 +294,4 @@ When the above code is executed, it produces the following result
 ## Sample Problem and Solution
 Write a Python program to find the closest value of a given target value in a given non-empty Binary Search Tree (BST) of unique values.
 
-``` python
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-def closest_value(root, target):
-    a = root.val
-    kid = root.left if target < a else root.right
-    if not kid:
-        return a
-    b = closest_value(kid, target)
-    return min((a,b), key=lambda x: abs(target-x))
-
-root = TreeNode(8)  
-root.left = TreeNode(5)  
-root.right = TreeNode(14) 
-root.left.left = TreeNode(4)  
-root.left.right = TreeNode(6) 
-root.left.right.left = TreeNode(8)  
-root.left.right.right = TreeNode(7)  
-root.right.right = TreeNode(24) 
-root.right.right.left = TreeNode(22)  
-    
-result = closest_value(root, 19)
-print(result)
-```
+Here's a link to the starting page [Link](Trees solution.md)
