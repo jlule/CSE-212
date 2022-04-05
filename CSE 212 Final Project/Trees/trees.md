@@ -11,7 +11,7 @@ A binary Tree is a data strcuture in which each node can have a maximnum of 2 ch
 
 # O notation for Trees
 
-## Binary Tree O nta
+## Binary Tree O notation
 ## Searching:
  For searching element 2, we have to traverse all elements (assuming we do breadth first traversal). Therefore, searching in binary tree has worst case complexity of O(n).
 ## Insertion: 
@@ -42,7 +42,9 @@ root.PrintTree()
 ```
 Can you guess the output of the above code. If you guessed 10 then you got it right.
 
+
 ## Next we are going to cover inserting into a tree.
+
 When inserting into a tree we use the same node cloass created above and add a insert class to it.The insert class compares the value of the node to the parent node and decides to add it as a left node or a right node. Finally the PrintTree class is used to print the tree.
 ``` python
 
