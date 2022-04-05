@@ -14,6 +14,7 @@ A binary Tree is a data strcuture in which each node can have a maximnum of 2 ch
 ## Binary Tree
 ## Searching:
  For searching element 2, we have to traverse all elements (assuming we do breadth first traversal). Therefore, searching in binary tree has worst case complexity of O(n).
+# Operations
 ## Insertion: 
 For inserting element as left child of 2, we have to traverse all elements. Therefore, insertion in binary tree has worst case complexity of O(n).
 ## Deletion:
