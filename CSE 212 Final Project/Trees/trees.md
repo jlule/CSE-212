@@ -1,17 +1,35 @@
 # Trees
-## In this lesson we are going to learn about trees in data structures
+## In this lesson we are going to learn about trees in data structures and the o notaiona nd time complxity for each operation
 ## So what is a tree?
 A Tree is  a data strcuture in which  data items are connected using refences in a hierarchical manner. Each tree consists of a root node from which we can access each element of the tree. 
+
+
 ## Binary Tree 
+![My image file](https://media.geeksforgeeks.org/wp-content/cdn-uploads/binary-tree-to-DLL.png)
+
 A binary Tree is a data strcuture in which each node can have a maximnum of 2 children. What that measn is that each node in a binary tree can have either one , or two or no children. Each node in a binary Tree contains data and refernces to its children. Bothe the children are named as left child and righ child according to their position
 
-## Diagram of a Structure of a node in a binary tree
+# O notation for Trees
 
-# NB. Add Image Here for visualization
+## Binary Tree
+## Searching:
+ For searching element 2, we have to traverse all elements (assuming we do breadth first traversal). Therefore, searching in binary tree has worst case complexity of O(n).
+## Insertion: 
+For inserting element as left child of 2, we have to traverse all elements. Therefore, insertion in binary tree has worst case complexity of O(n).
+## Deletion:
+ For deletion of element 2, we have to traverse all elements to find 2 (assuming we do breadth first traversal). Therefore, deletion in binary tree has worst case complexity of O(n).
 
+## Binary Search Tree
+## Searching: 
+For searching element 1, we have to traverse all elements (in order 3, 2, 1). Therefore, searching in binary search tree has worst case complexity of O(n). In general, time complexity is O(h) where h is height of BST.
+## Insertion: 
+For inserting element 0, it must be inserted as left child of 1. Therefore, we need to traverse all elements (in order 3, 2, 1) to insert 0 which has worst case complexity of O(n). In general, time complexity is O(h).
+## Deletion:
+ For deletion of element 1, we have to traverse all elements to find 1 (in order 3, 2, 1). Therefore, deletion in binary tree has worst case complexity of O(n). In general, time complexity is O(h).
 
-This is the code that can be used to define a node of the daigram above.
+This is the code that can be used to define a node 
 
+``` python
 class BinaryTreeNode:
     def __init__(self,data):
         self.data = data
@@ -21,11 +39,12 @@ class BinaryTreeNode:
         print(self.data)
 root = Node(9)
 root.PrintTree()
-
+```
 Can you guess the output of the above code. If you guessed 10 then you got it right.
 
 ## Next we are going to cover inserting into a tree.
 When inserting into a tree we use the same node cloass created above and add a insert class to it.The insert class compares the value of the node to the parent node and decides to add it as a left node or a right node. Finally the PrintTree class is used to print the tree.
+``` python
 
 class Node:
    def __init__(self, data):
@@ -68,6 +87,9 @@ When the above code runs it produces the followinf results.
 
 3 6 12 14
 
+```
+
+
  ## Traversing a Tree
 The tree can be traversed by deciding on a sequence to visit each node. As we can clearly see we can start at a node then visit the left sub-tree first and right sub-tree next. Or we can also visit the right sub-tree first and left sub-tree next. Accordingly there are different names for these tree traversal methods.
 
@@ -88,6 +110,7 @@ In the below python program, we use the Node class to create place holders for t
 At last the left node is added to complete the In-order traversal. Please note that this process is repeated for each sub-tree until all the nodes are traversed.
 
 Example
+``` python
 class Node:
    def __init__(self, data):
       self.left = None
@@ -131,7 +154,9 @@ root.insert(10)
 root.insert(19)
 root.insert(31)
 root.insert(42)
-print(root.inorderTraversal(root))      
+print(root.inorderTraversal(root)) 
+
+```
 Output
 When the above code is executed, it produces the following result −
 
@@ -143,7 +168,10 @@ In the below python program, we use the Node class to create place holders for t
 
 At last, the right node is added to complete the Pre-order traversal. Please note that, this process is repeated for each sub-tree until all the nodes are traversed.
 
+
 Example
+``` python
+
 class Node:
    def __init__(self, data):
       self.left = None
@@ -189,6 +217,8 @@ root.insert(19)
 root.insert(31)
 root.insert(42)
 print(root.PreorderTraversal(root))
+
+```
 Output
 When the above code is executed, it produces the following result −
 
@@ -201,6 +231,8 @@ In the below python program, we use the Node class to create place holders for t
 At last the root or parent node is added to complete the Post-order traversal. Please note that, this process is repeated for each sub-tree until all the nodes are traversed.
 
 Example
+
+``` python
 class Node:
    def __init__(self, data):
       self.left = None
@@ -229,8 +261,14 @@ class Node:
 print( self.data),
 if self.right:
 self.right.PrintTree()
+
+
+```
 # Postorder traversal
+
 # Left ->Right -> Root
+
+``` python
 def PostorderTraversal(self, root):
 res = []
 if root:
@@ -246,7 +284,41 @@ root.insert(19)
 root.insert(31)
 root.insert(42)
 print(root.PostorderTraversal(root))
+```
+
 Output
 When the above code is executed, it produces the following result 
 [10, 19, 14, 31, 42, 35, 27]
 
+
+## Sample Problem and Solution
+Write a Python program to find the closest value of a given target value in a given non-empty Binary Search Tree (BST) of unique values.
+
+``` python
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+def closest_value(root, target):
+    a = root.val
+    kid = root.left if target < a else root.right
+    if not kid:
+        return a
+    b = closest_value(kid, target)
+    return min((a,b), key=lambda x: abs(target-x))
+
+root = TreeNode(8)  
+root.left = TreeNode(5)  
+root.right = TreeNode(14) 
+root.left.left = TreeNode(4)  
+root.left.right = TreeNode(6) 
+root.left.right.left = TreeNode(8)  
+root.left.right.right = TreeNode(7)  
+root.right.right = TreeNode(24) 
+root.right.right.left = TreeNode(22)  
+    
+result = closest_value(root, 19)
+print(result)
+```

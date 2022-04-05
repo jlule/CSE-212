@@ -1,7 +1,7 @@
 # STACKS
 ## In this lesson I am going to talk about Stacks and some examples where stacks can applied in real life.
 ## I will cover what a Stack is.
-## And I will cover Stack Operations that incude Push, Pop and Peek
+## And I will cover Stack Operations that incude Push, Pop and Peek and O notaion and time complexity for all operarions
 ## What is a stack?
 A stack is very similar to the idea of what a physical stack would look like. The  stack data structure
 allows us to place a variabel or object on it. A very s imple example of how the idea of stacks can be explained is to think
@@ -12,10 +12,10 @@ If we want to read book A we need to take down books starting with D then C and 
 That is the idea behind a data structure stacks.
 
 ## Diagram of Stack
-
+![My image file](https://media.geeksforgeeks.org/wp-content/uploads/20210716162942/stack-660x345.png)
 
 ## Things to note Big O for  each operation stacks
-
+Lucky for us the time complxity for push(), pop() and peek() all take O(1) time. We do not run any loop in any of these operations.
 
 # STACK OPERATIONS
 Wwe have the Push Pop and Peek.
@@ -41,6 +41,7 @@ There are some popular ways that stacks have been used to make our experience wh
 Now enough with the talking lets look at a coding example. 
 We are going to look at some code and see the basics of  how stacks works
 
+``` python
 stack = []
  
 #append() function to push
@@ -79,8 +80,32 @@ a
 
 Stack after elements are popped:
 []
+```
+
 
 ## Sample Problem
+In this section I am going to ask you a question and then you are going to solve it.
+## Qestion 1
+Given a string path which is an absolute path starting with a slash '/') to a file or directory in a Unix style file system, convert it to a the simplified canoical path
+
+In Unix style file system a period '.' refers to the current directory a double period '..' refers to the directory up a level.
+
+``` python
+class Solution:
+    def simplifyPath(self, path:str) -> str:
+        stack = []
+        cur = ""
+
+        for c in path + "/":
+            if c == "/":
+                if cur == "..":
+                    if stack : stack.pop()
+                    elif cur!= "" and cur != ".":
+                        stack.append(cur)
+                    cur = ""
+            else: cur += c
+        return "/" + "/".join(stack)
+```
 
 
 
