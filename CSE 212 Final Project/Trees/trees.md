@@ -14,7 +14,6 @@ A binary Tree is a data strcuture in which each node can have a maximnum of 2 ch
 ## Binary Tree O nta
 ## Searching:
  For searching element 2, we have to traverse all elements (assuming we do breadth first traversal). Therefore, searching in binary tree has worst case complexity of O(n).
-# Operations
 ## Insertion: 
 For inserting element as left child of 2, we have to traverse all elements. Therefore, insertion in binary tree has worst case complexity of O(n).
 ## Deletion:
@@ -27,7 +26,7 @@ For searching element 1, we have to traverse all elements (in order 3, 2, 1). Th
 For inserting element 0, it must be inserted as left child of 1. Therefore, we need to traverse all elements (in order 3, 2, 1) to insert 0 which has worst case complexity of O(n). In general, time complexity is O(h).
 ## Deletion:
  For deletion of element 1, we have to traverse all elements to find 1 (in order 3, 2, 1). Therefore, deletion in binary tree has worst case complexity of O(n). In general, time complexity is O(h).
- ## Defining a node
+
 This is the code that can be used to define a node 
 
 ``` python
@@ -295,4 +294,4 @@ When the above code is executed, it produces the following result
 ## Sample Problem and Solution
 Write a Python program to find the closest value of a given target value in a given non-empty Binary Search Tree (BST) of unique values.
 
-Here's a link to the starting page [Link](Trees solution.md)
+Links to external sites [Solution](https://github.com/jlule/CSE-212/blob/main/CSE%20212%20Final%20Project/Trees%20solution.md)
