@@ -1,8 +1,46 @@
-# Linked lists are an ordered collection of objects. 
+# Linked Lists
+Linked lists are an ordered collection of objects. 
+
+A linked list is a data structure where the objects are arranged in a linear order. Unlike an array, however, in which the linear order is determined by the array indices, the order in a linked list is determined by a pointer in each object.
+
+When searching for a specific element, linked lists perform  with a time complexity of O(n). You need to iterate through the entire list to find the element you’re looking for.
 
 ## Diagram of a linked List
+![My image file](https://files.realpython.com/media/Group_14.27f7c4c6ec02.png)
 
-## O notation for a linked list
+
+# Singly Linked List
+![My image file](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200922124319/Singly-Linked-List1.png)
+
+A singly linked list is a type of linked list that is unidirectional, that is, it can be traversed in only one direction from head to the last node (tail)
+
+
+Time Complexity of Singly Linked List
+
+Access =  O(N)
+ 
+Search = O(N)
+
+Insertion = O(1)
+
+Deletion = O(1)
+
+# Doubly Linked List
+
+
+![My image file](https://favtutor.com/resources/images/uploads/Doubly_Linked_List.png)
+
+A Doubly Linked List (DLL) contains an extra pointer, typically called previous pointer, together with next pointer and data which are there in singly linked list.
+
+ Time Complexity of Double Linked List
+ Access =  O(N)
+ 
+ Search = O(N)
+
+ Insertion = O(1)
+
+ Deletion = O(1)
+
 
 So what makes them different from normal lists? Linked lists differ from lists in the way that they store elements in memory. 
 While lists use a contiguous memory block to store references to their data, linked lists store references as part of their own elements.
@@ -292,109 +330,6 @@ Mon
 
 ## Sample Problem
 Write a Python program to delete a specific item from a given doubly linked list.
+[Solution](https://github.com/jlule/CSE-212/edit/main/CSE%20212%20Final%20Project/linked%20list%20solution)
 
 
-
-``` python
-class Node(object):
-    # Singly linked node
-    def __init__(self, value=None, next=None, prev=None):
-        self.value = value
-        self.next = next
-        self.prev = prev
-
-class doubly_linked_list(object):
-    def __init__(self):
-        self.head = None
-        self.tail = None
-        self.count = 0
-
-    def append_item(self, value):
-        # Append an item 
-        new_item = Node(value, None, None)
-        if self.head is None:
-            self.head = new_item
-            self.tail = self.head
-        else:
-            new_item.prev = self.tail
-            self.tail.next = new_item
-            self.tail = new_item
-        self.count += 1
-    
-    def iter(self):
-        # Iterate the list
-        current = self.head
-        while current:
-            item_val = current.value
-            current = current.next
-            yield item_val
-
-    def print_foward(self):
-        for node in self.iter():
-            print(node)   
-        
-    def search_item(self, val):
-         for node in self.iter():
-            if val == node:
-                return True
-         return False
-     
-    def delete(self, value):
-        # Delete a specific item
-        current = self.head
-        node_deleted = False
-        if current is None:
-            node_deleted = False
-
-        elif current.value == value:
-            self.head = current.next
-            self.head.prev = None
-            node_deleted = True
-
-        elif self.tail.value == value:
-            self.tail = self.tail.prev
-            self.tail.next = None
-            node_deleted = True
-
-        else:
-            while current:
-                if current.value == value:
-                    current.prev.next = current.next
-                    current.next.prev = current.prev
-                    node_deleted = True
-                current = current.next
-
-        if node_deleted:
-            self.count -= 1
-
-items = doubly_linked_list()
-items.append_item('PHP')
-items.append_item('Python')
-items.append_item('C#')
-items.append_item('C++')
-items.append_item('Java')
-items.append_item('SQL')
-
-print("Original list:")
-items.print_foward()
-
-items.delete("Java")
-items.delete("Python")
-print("\nList after deleting two items:")
-items.print_foward()
-
-```
-Sample Output
-Original list:
-PHP
-Python
-C#
-C++
-Java
-SQL
-
-List after deleting two items:
-PHP
-C#
-C++
-SQL

@@ -90,22 +90,9 @@ Given a string path which is an absolute path starting with a slash '/') to a fi
 
 In Unix style file system a period '.' refers to the current directory a double period '..' refers to the directory up a level.
 
-``` python
-class Solution:
-    def simplifyPath(self, path:str) -> str:
-        stack = []
-        cur = ""
+[Solution](https://github.com/jlule/CSE-212/blob/main/CSE%20212%20Final%20Project/stacks%20solution.md)
 
-        for c in path + "/":
-            if c == "/":
-                if cur == "..":
-                    if stack : stack.pop()
-                    elif cur!= "" and cur != ".":
-                        stack.append(cur)
-                    cur = ""
-            else: cur += c
-        return "/" + "/".join(stack)
-```
+
 
 
 

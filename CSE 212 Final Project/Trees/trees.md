@@ -294,4 +294,4 @@ When the above code is executed, it produces the following result
 ## Sample Problem and Solution
 Write a Python program to find the closest value of a given target value in a given non-empty Binary Search Tree (BST) of unique values.
 
-Links to external sites [Solution](https://github.com/jlule/CSE-212/blob/main/CSE%20212%20Final%20Project/Trees%20solution.md)
+ [Solution](https://github.com/jlule/CSE-212/blob/main/CSE%20212%20Final%20Project/Trees%20solution.md)
