@@ -85,7 +85,7 @@ Stack after elements are popped:
 
 ## Sample Problem
 In this section I am going to ask you a question and then you are going to solve it.
-## Qestion 1
+## Question 1
 Given a string path which is an absolute path starting with a slash '/') to a file or directory in a Unix style file system, convert it to a the simplified canoical path
 
 In Unix style file system a period '.' refers to the current directory a double period '..' refers to the directory up a level.
