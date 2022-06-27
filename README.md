@@ -6,9 +6,9 @@
 -Trees 
 
 
-Name:	James Lule
-Date:	6/25/2022
-Teacher:	Aaron Kay
+## Name:	James Lule
+## Date:	6/25/2022
+
 
 
 # Stacks
