@@ -10,10 +10,8 @@ Name:	James Lule
 Date:	6/25/2022
 Teacher:	Aaron Kay
 
-#Question 1:  Provide the outline for the data structures tutorial you are creating for the final project.  Use the Python Fundamentals Tutorial outline provided in the assignment instructions as an example.
 
-
-#Stacks
+# Stacks
 ## The undo option and the stack
 ## Stack of Pancakes
 ## Software and the function Stack
