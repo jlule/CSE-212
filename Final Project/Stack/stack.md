@@ -90,7 +90,7 @@ Given a string path which is an absolute path starting with a slash '/') to a fi
 
 In Unix style file system a period '.' refers to the current directory a double period '..' refers to the directory up a level.
 
-[Solution](https://github.com/jlule/CSE-212/blob/main/CSE%20212%20Final%20Project/stacks%20solution.md)
+[Solution](https://github.com/jlule/CSE-212/blob/main/Final%20Project/stacks%20solution.md)
 
 
 
