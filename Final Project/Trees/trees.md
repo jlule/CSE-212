@@ -1,5 +1,5 @@
 # Trees
-## In this lesson we are going to learn about trees in data structures and the o notaiona nd time complxity for each operation
+## In this lesson we are going to learn about trees in data structures and the O notaion and time complxity for each operation
 ## So what is a tree?
 A Tree is  a data strcuture in which  data items are connected using refences in a hierarchical manner. Each tree consists of a root node from which we can access each element of the tree. 
 
@@ -296,4 +296,4 @@ When the above code is executed, it produces the following result
 ## Sample Problem and Solution
 Write a Python program to find the closest value of a given target value in a given non-empty Binary Search Tree (BST) of unique values.
 
- [Solution](https://github.com/jlule/CSE-212/blob/main/CSE%20212%20Final%20Project/Trees%20solution.md)
+ [Solution](https://github.com/jlule/CSE-212/blob/main/Final%20Project/Trees%20solution.md)
