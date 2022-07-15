@@ -330,6 +330,6 @@ Mon
 
 ## Sample Problem
 Write a Python program to delete a specific item from a given doubly linked list.
-[Solution](https://github.com/jlule/CSE-212/edit/main/CSE%20212%20Final%20Project/linked%20list%20solution)
+[Solution](https://github.com/jlule/CSE-212/blob/main/Final%20Project/linked%20list%20solution.md)
 
 
